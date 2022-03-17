@@ -1,31 +1,20 @@
 <template>
-  <div id="app" class="g-container">
-    <div class="g-view-container">
-      <router-view/>
-    </div>
-    <div class="g-footer-container">
-
-    </div>
+  <div id="app">
+    <router-view/>
+    <tab-footer></tab-footer>
   </div>
 </template>
 
-
 <script>
-
+import TabFooter from '@/components/common/TabFooter.vue'
 export default {
-  name: 'App',
-  components: {}
+  name:'App',
+  components:{
+    TabFooter
+  }
 }
 </script>
 
+<style lang="less">
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
